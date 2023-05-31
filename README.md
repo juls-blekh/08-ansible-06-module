@@ -186,13 +186,11 @@ if __name__ == '__main__':
 **Шаг 14.** Создайте ещё одну директорию любого наименования, перенесите туда single task playbook и архив c collection.
 
 **Шаг 15.** Установите collection из локального архива: `ansible-galaxy collection install <archivename>.tar.gz`.
-![img.png](img/install-collection.png)
+![img.png](img/install-collection.png)  
+
 **Шаг 16.** Запустите playbook, убедитесь, что он работает.  
-Выполнение playbook завершается с ошибкой. Модуль не видит. Пробовала 2 варианта вызова модуля - просто по названию и с указанием namespace и имени коллекции. Понятно, что надо правильно указать путь до модуля, но не получается...
-![img.png](img/play-err.png)   
-![img.png](img/role-v1.png)  
-![img.png](img/role-v2.png)  
-В ansible-galaxy collection list коллекция не отображается, так и должно быть? 
+Выполнение playbook завершается успешно - коллекцию разместила по стандартному пути. 
+![img.png](img/playbook-check.png)   
 
 ссылка на коллекцию: [my_own_namespace](https://github.com/juls-blekh/08-ansible-06-module/tree/master/my_own_namespace/yandex_cloud_elk)  
 
